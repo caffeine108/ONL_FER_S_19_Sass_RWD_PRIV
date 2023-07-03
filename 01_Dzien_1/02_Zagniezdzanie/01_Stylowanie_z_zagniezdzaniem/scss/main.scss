@@ -1,0 +1,45 @@
+@import 'variables';
+.menu {
+  display: flex;
+  li {
+    padding-left: 10px;
+    list-style: none;
+    &:hover {
+      color: red;
+    }
+    &:first-child {
+      color: orange;
+    }
+    &:last-child {
+      color: green;
+    }
+  }
+  background-color: $primary-color;
+}
+header {
+  border: 1px solid $accent-color;
+}
+.main-width {
+  width: $main-width;
+}
+.main-width {
+  width: $main-width;
+}
+footer {
+  .menu {
+    display: flex;
+    justify-content: flex-start;
+    li {
+      margin-right: 10px;
+      &:hover {
+        background-color: lightgray;
+      }
+      &:last-child {
+        margin-right: 0;
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+

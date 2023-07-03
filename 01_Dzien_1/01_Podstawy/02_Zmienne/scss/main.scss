@@ -16,8 +16,8 @@ main {
 
 div {
   border-radius: 5px;
-  width: 100px;
-  height: 100px;
+  width: $div-width;
+  height: $div-height;
   padding: 20px;
   margin: 40px;
   font-size: 35px;

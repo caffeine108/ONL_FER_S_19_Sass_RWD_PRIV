@@ -1,7 +1,7 @@
 {
   "name": "sass",
   "version": "2.0.0",
-  "source": "01_Dzien_1/01_Podstawy/01_Pierwsze_kroki_z_SCSS/index.html",
+  "source": "01_Dzien_1/04_Mixins/04_Zadanie_4/index.html",
   "scripts": {
     "start": "parcel",
     "build": "parcel build"
