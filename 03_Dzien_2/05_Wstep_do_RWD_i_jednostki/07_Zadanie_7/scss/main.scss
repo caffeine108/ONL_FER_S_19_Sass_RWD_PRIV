@@ -1,0 +1,15 @@
+.images {
+  width: 80%;
+  min-height: 50px;
+  border: 1px solid red;
+}
+
+.img_one {
+
+  // 30 procent ma zajmowac od rodzica - jego rodzcem bylo body o pelnej szerokosci
+
+    background-image: url("../images/cat.jpg");
+    background-size: cover;
+    width: 30%;
+    height: 300px;
+  }

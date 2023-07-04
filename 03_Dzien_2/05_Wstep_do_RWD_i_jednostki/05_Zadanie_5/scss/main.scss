@@ -1,0 +1,10 @@
+.footer-text {
+
+  /* Ustaw temu elementowi obramowanie oraz szerokość, w taki sposób,
+  aby po przeliczeniu szerokość tego elementu wynosiła 240px.
+  Użyj jednostki rem. */
+
+  box-sizing: border-box;
+  width: 15rem;
+  border: 1px solid red;
+}
