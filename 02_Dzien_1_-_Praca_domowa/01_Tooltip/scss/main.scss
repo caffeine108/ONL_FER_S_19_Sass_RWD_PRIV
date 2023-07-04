@@ -1,0 +1,57 @@
+//@mixin setTooltip($text, $backgroundColor) {
+//  position: relative;
+//  overflow: visible;
+//  &:hover::before {
+//    content: $text;
+//    position: absolute;
+//    bottom: -30px;
+//    left: 50%;
+//    transform: translateX(-50%);
+//    padding: 5px;
+//    background-color: $backgroundColor;
+//    color: white;
+//    border-radius: 3px;
+//    white-space: nowrap;
+//    font-size: 14px;
+//    visibility: visible;
+//    opacity: 1;
+//  }
+//}
+//
+//.list {
+//  li {
+//    @include setTooltip("To jest tooltip", #ff0000);
+//    display: inline-block;
+//    margin-right: 10px;
+//    padding: 5px;
+//    background-color: lightgray;
+//    cursor: pointer;
+//  }
+//}
+
+
+
+// drugie rozwiazanie //
+
+@mixin setToolTip($text, $color) {
+  position: relative;
+
+  &::after {
+    content: $text;
+    position: absolute;
+    top: 5px;
+    padding: 10px;
+    color: $color;
+    border: 1px solid darkgoldenrod;
+  }
+}
+
+li:hover:first-of-type {
+  @include setToolTip('Test', red);
+}
+
+li:hover:nth-of-type(2) {
+  @include setToolTip('Drugi', green);
+}
+
+//Kolejne elementy listy.

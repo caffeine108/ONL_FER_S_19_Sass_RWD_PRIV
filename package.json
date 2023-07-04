@@ -1,7 +1,7 @@
 {
   "name": "sass",
   "version": "2.0.0",
-  "source": "01_Dzien_1/04_Mixins/04_Zadanie_4/index.html",
+  "source": "03_Dzien_2/02_Listy_i_mapy/03_Zadanie_3/index.html",
   "scripts": {
     "start": "parcel",
     "build": "parcel build"

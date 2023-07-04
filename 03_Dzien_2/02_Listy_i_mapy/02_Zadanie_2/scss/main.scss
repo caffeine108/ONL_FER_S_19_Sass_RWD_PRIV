@@ -1,0 +1,23 @@
+@use "sass:map";
+
+
+$colors: (
+        color1: grey,
+        color2: green,
+        color3: lightgreen,
+        color4: red,
+        color5: pink,
+);
+
+body {
+  background-color: map-get($colors, color5);
+  color: map-get($colors, text);
+}
+
+
+footer {
+  background-color: map-get($colors, color4);
+  color: map-get($colors, text);
+}
+
+

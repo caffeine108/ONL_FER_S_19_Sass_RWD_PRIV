@@ -1,0 +1,57 @@
+%clearfix {
+  &::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+}
+
+.text.mixin {
+  @extend %clearfix;
+}
+
+.left_box {
+  border: 1px solid cornflowerblue;
+  width: 100px;
+  height: 100px;
+  float: left;
+
+}
+
+.right_box {
+  border: 1px solid cornflowerblue;
+  width: 100px;
+  height: 100px;
+  float: right;
+}
+
+.container {
+  border: 1px solid #9370DB;
+  width: 100%;
+
+}
+
+
+// Zadanie 2 z placeholderem //
+
+%message {
+  width: 500px;
+  height: 100px;
+  border: 1px solid gray;
+  margin-bottom: 20px;
+
+
+}
+.success {
+  @extend %message;
+  background-color: yellow;
+}
+.error {
+  @extend %message;
+  background-color: pink;
+}
+
+.info {
+  @extend %message;
+  background-color: lightblue;
+}
