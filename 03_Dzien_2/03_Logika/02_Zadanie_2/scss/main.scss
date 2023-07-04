@@ -1,0 +1,22 @@
+$circle-dimension: 100px;
+$rectangle-dimension: 200px;
+
+@mixin drawItem($shape, $background-color) {
+  @if $shape == circle {
+    width: $circle-dimension;
+    height: $circle-dimension;
+    border-radius: 50%;
+  }
+  @else if $shape == rectangle {
+    width: $rectangle-dimension;
+    height: $rectangle-dimension;
+  }
+
+  background-color: $background-color;
+}
+
+.draw-container {
+  @include drawItem(circle, red);
+}
+
+

@@ -1,0 +1,21 @@
+@use "sass:math";
+
+@mixin headerSize($font-size) {
+  @for $i from 1 through 6 {
+
+    // Pętla która z każdym obrotem będzie generować kolejny nagłówek //
+
+    h#{$i} {
+      font-size: math.div($font-size, $i) + px;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 992px) {
+  @include headerSize(30);
+}
+
+@media only screen and (max-width: 1500px) {
+  @include headerSize(60);
+}
