@@ -1,7 +1,7 @@
 {
   "name": "sass",
   "version": "2.0.0",
-  "source": "03_Dzien_2/05_Wstep_do_RWD_i_jednostki/09_Zadanie_9/index.html",
+  "source": "04_Dzien_2_-_Praca_domowa/01_Wielkosci_naglowkow/index.html",
   "scripts": {
     "start": "parcel",
     "build": "parcel build"
