@@ -1,0 +1,94 @@
+// layouts/hero
+.hero {
+  width: 100%;
+  background-color: $bg-grey;
+  padding: 30px 15px;
+}
+
+.container--hero {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    flex-direction: row;
+    padding: 45px;
+    justify-content: space-between;
+  }
+}
+
+.hero__text {
+  text-align: center;
+  padding: 30px 15px 0 0;
+
+  h2 {
+    font-weight: 700;
+    font-size: 32px;
+    margin: 0;
+  }
+  p {
+    padding: 5px 0;
+  }
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    width: 50%;
+    text-align: left;
+
+    h2 {
+      font-size: 48px;
+    }
+
+    p {
+      font-size: 24px;
+      padding: 0;
+    }
+  }
+}
+
+// .hero__buttons {
+//   @media screen and (min-width: $breakpoint-desktop) {
+//     width: 45%;
+//   }
+// }
+
+.hero__button {
+  width: 100%;
+  border: 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 20px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+
+  &--action {
+    color: #fff;
+    background-color: #0090c5;
+    margin-bottom: 10px;
+  }
+  &--info {
+    color: #444;
+    background-color: rgba(0, 0, 0, 0.085);
+  }
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    width: 300px;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: space-between;
+    font-size: 30px;
+
+    i {
+      order: 2;
+    }
+
+    span {
+      order: 1;
+    }
+  }
+}

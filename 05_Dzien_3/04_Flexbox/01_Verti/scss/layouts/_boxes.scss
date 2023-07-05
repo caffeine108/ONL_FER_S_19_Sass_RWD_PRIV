@@ -1,0 +1,56 @@
+// layouts/boxes
+
+.boxes {
+  background-color: $bg-grey;
+  padding-top: 10px;
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -20px;
+  }
+
+  articles {
+    width: calc(100% / 3);
+    padding: 20px;
+    box-sizing: border-box;
+
+
+    .text__article {
+      background-color: #ffffff;
+      padding: 4em 2em 3em 2em;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    h2 {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 800;
+      font-size: 1.35em;
+      color: $h2-charcoal;
+      margin: 0;
+      padding-bottom: .25em;
+    }
+
+    span {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
+      font-size: 1rem;
+      color: $span-grey;
+    }
+
+    p {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
+      font-size: 1rem;
+      color: $span-grey;
+    }
+  }
+}

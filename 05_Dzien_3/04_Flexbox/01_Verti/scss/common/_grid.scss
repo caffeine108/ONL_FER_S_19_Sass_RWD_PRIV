@@ -1,0 +1,48 @@
+@use 'sass:math';
+
+.container {
+  width: 100%;
+  max-width: 990px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+
+    $columns: 12;
+    $column-base-width: math.div(100%, $columns);
+
+    @for $i from 1 through $columns {
+      .col-#{$i} {
+        min-height: 1px;
+        width: $column-base-width * $i;
+        padding: 12px;
+
+//        @media screen and (max-width: 550px) {
+//          width: 100%;
+//
+//          @media screen and (min-width: 551px) and (max-width: 1080px) {
+//            width: $column-base-width * 5;
+//          }
+//        }
+//      }
+//    }
+//  }
+//}
+
+        @media screen and (max-width: 768px) {
+          width: $column-base-width * $columns; // Expand to full width on mobile
+        }
+
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+          width: $column-base-width * ($i + 1); // Increase width for tablets
+        }
+
+        @media screen and (min-width: 1025px) {
+          width: $column-base-width * $i; // Adjust width for laptops and larger screens
+        }
+      }
+    }
+  }
+}

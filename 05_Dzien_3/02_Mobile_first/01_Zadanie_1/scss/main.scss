@@ -1,0 +1,33 @@
+.container {
+  @media only screen and (min-width: 600px) {
+    display: flex;
+  }
+}
+
+.sidebar {
+  background-color: #000;
+  height: 500px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+
+
+  @media only screen and (min-width: 600px) {
+    width: 20%;
+  }
+}
+
+section {
+  background-color: #08a6e4;
+  height: 500px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (min-width: 600px) {
+    width: 80%;
+  }
+}
