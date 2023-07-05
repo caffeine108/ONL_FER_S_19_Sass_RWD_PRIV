@@ -1,19 +1,18 @@
 .test_height_grandpa {
-  border: 2px solid red;
+  background-color: red;
   height: 50px;
 
   .test_height_daddy {
-    border: 2px solid blue;
+    background-color: blue;
     height: 200%;
 
-    /* jak zakomentuje wartosc height w daddy to baby
-    odwoła się do grandba a nie do daddy
-    i zamiast być  100px to będzie 50px
+    /* baby odnosi sie do daddy, wiec by byc takie jak grandpa musi dostac 50% od daddy
+     jak zakomentuje wartosc height w daddy to baby nie ma sie do czego odwołac - to sie tyczy procentow
      */
 
     .test_height_baby {
-      border: 2px solid green;
-      height: 100%;
+      background-color: green;
+      height: 50%;
     }
   }
 }
