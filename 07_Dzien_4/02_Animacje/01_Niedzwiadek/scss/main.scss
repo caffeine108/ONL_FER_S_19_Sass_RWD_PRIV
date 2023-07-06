@@ -123,6 +123,7 @@ body {
   transform: rotate(-25deg);
 }
 
+
 .eye-right {
   right: 0;
   transform: rotate(25deg);
@@ -240,6 +241,8 @@ body {
   transform: translate(-50%, 0);
 }
 
+
+
 .hand-left {
   background: rgb(216, 137, 70);
   background: linear-gradient(135deg, rgba(216, 137, 70, 1) 14%, rgba(229, 173, 76, 1) 100%);
@@ -254,6 +257,16 @@ body {
   transform: rotate(-20deg);
 }
 
+@keyframes handWave {
+  from {
+    transform: rotate(20deg);
+  }
+
+  to {
+    transform: rotate(-40deg)
+  }
+}
+
 .hand-right {
   background: rgb(216, 137, 70);
   background: linear-gradient(135deg, rgba(216, 137, 70, 1) 14%, rgba(229, 173, 76, 1) 100%);
@@ -266,6 +279,7 @@ body {
   right: -100px;
   transform-origin: 10px 50%;
   transform: rotate(20deg);
+  animation: handWave 1s ease-in-out infinite alternate;
 }
 
 .legs {

@@ -16,9 +16,13 @@
   background: none;
   box-shadow: inset 0 0 0 3px crimson;
   cursor: pointer;
+  transition-duration: 0.3s;
 }
 
 .red-button:hover {
+  border-radius: 50px;
+  background-color: crimson;
+  color: white;
 
 }
 
@@ -32,9 +36,14 @@
   margin: 10px;
   text-transform: uppercase;
   cursor: pointer;
+  transition-duration: 0.3s;
 }
 
 .blue-button:hover {
+  transform: scale(1.5);
+  background-color: deeppink;
+  box-shadow: 8px 8px 8px 0 rgba(0, 0, 0, 0.25)
+
 
 }
 
@@ -47,8 +56,10 @@
   margin: 10px;
   text-transform: uppercase;
   cursor: pointer;
+  transition-duration: 0.3s;
 }
 
 .green-button:hover {
+  border-radius: 20px;
 
 }

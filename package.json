@@ -1,7 +1,7 @@
 {
   "name": "sass",
   "version": "2.0.0",
-  "source": "07_Dzien_4/01_Elastyczne_media/03_Zadanie_3/index.html",
+  "source": "07_Dzien_4/02_Animacje/04_Rakieta/index.html",
   "scripts": {
     "start": "parcel",
     "build": "parcel build"

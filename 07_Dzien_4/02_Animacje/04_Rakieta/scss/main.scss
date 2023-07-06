@@ -32,6 +32,7 @@
   left: 0;
   top: 0;
   z-index: 2;
+  animation: planet1 2s 1s linear, planet2 2s 2s linear, planet3 2s 4s linear, planet4 2s 6s linear;
 
   span {
     display: block;
@@ -71,7 +72,7 @@
   box-shadow: 0 0 30px rgba(176, 22, 4, 0.4), 0 0 100px rgba(249, 149, 34, 0.2);
 }
 
-.planet2 {
+  .planet2 {
   position: absolute;
   background: url(../images/planet2.png);
   width: 201px;
@@ -100,3 +101,82 @@
   border-radius: 50%;
   box-shadow: 0 0 50px rgba(247, 215, 76, 0.2);
 }
+
+@keyframes planet1 {
+  0% {
+    left: 150px;
+    top: 100px;
+    transform: rotate(90deg);
+  }
+  100% {
+    left: 200px;
+    top: 100px;
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes planet2 {
+  0% {
+    left: 200px;
+    top: 100px;
+    transform: rotate(90deg);
+  }
+  50% {
+    left: 750px;
+    top: 140px;
+    transform: rotate(90deg);
+  }
+  100% {
+    left: 1500px;
+    top: 140px;
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes planet3 {
+  0% {
+    left: 1500px;
+    top: 140px;
+    transform: rotate(90deg);
+  }
+  50% {
+    left: 1500px;
+    top: 650px;
+    transform: rotate(180deg);
+  }
+  100% {
+    left: 1500px;
+    top: 650px;
+    transform: rotate(270deg);
+  }
+}
+
+@keyframes planet4 {
+  0% {
+    left: 1500px;
+    top: 650px;
+    transform: rotate(270deg);
+  }
+  50% {
+    left:700px;
+    top: 650px;
+    transform: rotate(270deg);
+  }
+  80% {
+    left: 150px;
+    top: 670px;
+    transform: rotate(360deg);
+  }
+  100% {
+    left: 150px;
+    top: 100px;
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
