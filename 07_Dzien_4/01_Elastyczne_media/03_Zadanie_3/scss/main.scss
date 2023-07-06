@@ -1,0 +1,10 @@
+.one-image-bg {
+  height: 300px;
+  border: 1px solid black;
+  background-image: url('../images/rabbit.png'); // zeby wstawic krolika
+  background-size: 50%;  // 50 % rodzica
+  background-repeat: no-repeat; // dodane pozniej by nie powtarzalo
+}
+
+
+// kiedy rodzic ma wymiary na sztywno to obrazek przestaje byc responsywny
